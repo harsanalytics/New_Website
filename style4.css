@@ -1,0 +1,48 @@
+/* Background Styling */
+body {
+    background: url('del.jfif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Tracking Container */
+.tracking-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tracking Steps */
+.tracking-steps {
+    list-style: none;
+    padding: 0;
+}
+
+.step {
+    font-size: 20px;
+    padding: 12px;
+    margin: 10px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Step Colors */
+.preparing { background-color: #ffeeba; } /* Yellow */
+.baking { background-color: #f8d7da; } /* Red */
+.out-for-delivery { background-color: #d4edda; } /* Green */
+.delivered { background-color: #cce5ff; } /* Blue */
+
+/* Active Step Animation */
+.step.active {
+    font-weight: bold;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.05); }
+}

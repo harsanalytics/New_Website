@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Order</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+    <h1>Track Your Order</h1>
+    <p>Your Order ID: <span id="order-id">123456</span></p>
+
+    <div class="tracking-container">
+        <ul class="tracking-steps">
+            <li class="step preparing">Preparing Your Order</li>
+            <li class="step baking">Baking in Progress</li>
+            <li class="step out-for-delivery">Out for Delivery</li>
+            <li class="step delivered">Delivered</li>
+        </ul>
+    </div>
+
+    <h2>Estimated Delivery: <span id="delivery-time">30-40 mins</span></h2>
+
+<style>
+    #delivery-time {
+        color: #ffe033; /* Change color to bright orange */
+        font-weight: bold;
+    }
+</style>
+
+
+    <script src="scripttracking.js"></script>
+
+</body>
+</html>

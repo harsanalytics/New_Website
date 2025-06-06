@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Menu</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <h1 class="center-text">Our Delicious Pizza Menu</h1>
+
+<style>
+    .center-text {
+        text-align: center;
+        font-size: 50px;
+        font-weight: bold;
+        color: #ff5733;
+        margin-top: 20px;
+    }
+</style>
+
+
+    <div class="menu-container">
+
+        <!-- Margherita Pizza -->
+        <div class="menu-item">
+            <img src="1.jfif" alt="Margherita Pizza">
+            <h2>Margherita - $10</h2>
+            <p class="info"><b>Ingredients: Tomato Sauce, Mozzarella, Basil <br> Calories: 250 per slice <br> Best Paired With: Garlic Bread & Iced Tea,</b></p>
+            <button onclick="addToCart('Margherita', 10)">Add to Cart</button>
+        </div>
+
+        <!-- Pepperoni Pizza -->
+        <div class="menu-item">
+            <img src="2.jfif" alt="Pepperoni Pizza">
+            <h2>Pepperoni - $12</h2>
+            <p class="info"><b>Ingredients: Tomato Sauce, Mozzarella, Pepperoni <br> Calories: 300 per slice <br> Best Paired With: Chicken Wings & Cola</b></p>
+            <button onclick="addToCart('Pepperoni', 12)">Add to Cart</button>
+        </div>
+
+        <!-- BBQ Chicken Pizza -->
+        <div class="menu-item">
+            <img src="3.jfif" alt="BBQ Chicken Pizza">
+            <h2>BBQ Chicken - $13</h2>
+            <p class="info"><b>Ingredients: BBQ Sauce, Mozzarella, Grilled Chicken, Red Onion <br> Calories: 320 per slice <br> Best Paired With: Coke & Fries</b></p>
+            <button onclick="addToCart('BBQ Chicken', 13)">Add to Cart</button>
+        </div>
+
+        <!-- Veggie Supreme Pizza -->
+        <div class="menu-item">
+            <img src="4.jfif" alt="Veggie Supreme Pizza">
+            <h2>Veggie Supreme - $11</h2>
+            <p class="info"><b>Ingredients: Tomato Sauce, Bell Peppers, Mushrooms, Olives, Mozzarella <br> Calories: 280 per slice <br> Best Paired With: Iced Tea & Side Salad</b></p>
+            <button onclick="addToCart('Veggie Supreme', 11)">Add to Cart</button>
+        </div>
+
+        <!-- Hawaiian Pizza -->
+        <div class="menu-item">
+            <img src="5.jfif" alt="Hawaiian Pizza">
+            <h2>Hawaiian - $12</h2>
+            <p class="info"><b>Ingredients: Tomato Sauce, Mozzarella, Pineapple, Ham <br> Calories: 290 per slice <br> Best Paired With: Garlic Bread & Lemonade</b></p>
+            <button onclick="addToCart('Hawaiian', 12)">Add to Cart</button>
+        </div>
+
+        <!-- Cheese Burst Pizza -->
+        <div class="menu-item">
+            <img src="6.jfif" alt="Cheese Burst Pizza">
+            <h2>Cheese Burst - $14</h2>
+            <p class="info"><b>Ingredients: Double Layer Cheese, Tomato Sauce, Mozzarella <br> Calories: 350 per slice <br> Best Paired With: Fries & Cold Coffee</b></p>
+            <button onclick="addToCart('Cheese Burst', 14)">Add to Cart</button>
+        </div>
+
+        <!-- Meat Lover's Pizza -->
+        <div class="menu-item">
+            <img src="7.jfif" alt="Meat Lover's Pizza">
+            <h2>Meat Lover's - $15</h2>
+            <p class="info"><b>Ingredients: Tomato Sauce, Mozzarella, Pepperoni, Ham, Sausage <br> Calories: 340 per slice <br> Best Paired With: Chicken Wings & Beer</b></p>
+            <button onclick="addToCart('Meat Lover', 15)">Add to Cart</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Background Image with Interactive Effects */
+body {
+    background: url('bg.jfif') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Transparent Effect on Menu Cart */
+.menu-container {
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.menu-container:hover {
+    transform: scale(1.02);
+}

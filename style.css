@@ -1,0 +1,81 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Navigation Bar */
+nav {
+    background: #ff5733;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Animated Button */
+button {
+    background: #008CBA;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: #005f73;
+}
+
+/* Menu Items */
+.menu-item {
+    border: 2px solid #ddd;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Order Status Animation */
+#status {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff5733;
+    animation: blink 1s infinite alternate;
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0.5; }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav {
+        text-align: center;
+        display: block;
+    }
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+}
